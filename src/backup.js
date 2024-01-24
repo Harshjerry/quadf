@@ -98,10 +98,10 @@ const Table=()=>{
    const[data,setdata]=useState({});
    useEffect(()=>{
    const getData=async()=>{
-     try{const res=await axios.get("http://localhost:5000/api/holinfo/");
+     try{const res=await axios.get("https://quad-backend.vercel.app/api/holinfo/");
      console.log(res);
    setdata(res.data);}catch(err){console.log(err);}
-   }
+   } 
    getData();
    },[])
 
